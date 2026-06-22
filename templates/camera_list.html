@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Список камер - Архив японских ретро-видеокамер{% endblock %}
+
+{% block content %}
+<header class="vintage-header">
+    <div class="header-main">
+        <h1 class="main-title">カタログカメラ</h1>
+        <p class="subtitle">Полный каталог видеокамер</p>
+    </div>
+    <div class="header-actions">
+        <a href="/" class="search-btn-vintage" style="text-decoration: none;">На главную</a>
+    </div>
+</header>
+
+<!-- Фильтры -->
+<div class="status-bar">
+    <div class="status-item">
+        <span class="status-label">Найдено камер:</span>
+        <span class="status-value">{{ cameras.count }}</span>
+    </div>
+    {% if selected_manufacturer %}
+    <div class="status-item">
+        <span class="status-label">Производитель:</span>
+        <span class="status-value">
+            {% for manufacturer in manufacturers %}
+                {% if manufacturer.slug == selected_manufacturer %}{{ manufacturer.name }}{% endif %}
+            {% endfor %}
+        </span>
+    </div>
+    {% endif %}
+    {% if selected_format %}
+    <div class="status-item">
+        <span class="status-label">Формат:</span>
+        <span class="status-value">
+            {% for format in recording_formats %}
+                {% if format.slug == selected_format %}{{ format.name }}{% endif %}
+            {% endfor %}
+        </span>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Список камер -->
+<section class="featured-section">
+    <h2 class="section-title-vintage">Камеры</h2>
+    <div class="featured-cameras">
+        {% for camera in cameras %}
+        <article class="camera-featured-card">
+            <div class="camera-image-vintage">
+                <div class="image-frame">
+                    {% with main_image=camera.get_main_image %}
+                        {% if main_image %}
+                            <img src="{{ main_image.image.url }}" alt="{{ camera.name }}" style="max-height: 180px; max-width: 100%;">
+                        {% else %}
+                            <div class="placeholder-image">Изображение камеры</div>
+                        {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+            <div class="camera-info-vintage">
+                <h3><a href="/cameras/camera/{{ camera.slug }}/" style="color: inherit; text-decoration: none;">
+                    {{ camera.manufacturer.name }} {{ camera.name }}
+                </a></h3>
+                <div class="camera-meta-vintage">
+                    <span class="year">{{ camera.release_year }} год</span>
+                    <span class="media-type">{{ camera.recording_format.name }}</span>
+                    <span class="manufacturer">{{ camera.manufacturer.name }}</span>
+                </div>
+                <p class="camera-description-vintage">
+                    {{ camera.description|truncatewords:30 }}
+                </p>
+                <div class="camera-stats-vintage">
+                    <div class="stat-item">
+                        <span class="stat-label">Год выпуска</span>
+                        <span class="stat-value">{{ camera.release_year }}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Формат</span>
+                        <span class="stat-value">{{ camera.recording_format.name }}</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% empty %}
+        <p style="text-align: center; color: #7f8c8d; grid-column: 1 / -1; padding: 40px;">
+            Камеры не найдены
+        </p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

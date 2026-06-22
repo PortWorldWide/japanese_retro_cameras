@@ -1,0 +1,1134 @@
+[
+{
+  "model": "cameras.manufacturer",
+  "pk": 1,
+  "fields": {
+    "name": "SONY",
+    "slug": "sony",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.manufacturer",
+  "pk": 2,
+  "fields": {
+    "name": "Panasonic",
+    "slug": "panasonic",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.manufacturer",
+  "pk": 3,
+  "fields": {
+    "name": "JVC",
+    "slug": "jvc",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.manufacturer",
+  "pk": 4,
+  "fields": {
+    "name": "Canon",
+    "slug": "canon",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.manufacturer",
+  "pk": 5,
+  "fields": {
+    "name": "Sharp",
+    "slug": "sharp",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.manufacturer",
+  "pk": 6,
+  "fields": {
+    "name": "Hitachi",
+    "slug": "hitachi",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.manufacturer",
+  "pk": 7,
+  "fields": {
+    "name": "Toshiba",
+    "slug": "toshiba",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.manufacturer",
+  "pk": 8,
+  "fields": {
+    "name": "Aiwa",
+    "slug": "aiwa",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.manufacturer",
+  "pk": 9,
+  "fields": {
+    "name": "Sanyo",
+    "slug": "sanyo",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 1,
+  "fields": {
+    "name": "VHS",
+    "slug": "vhs",
+    "format_type": "analog",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 2,
+  "fields": {
+    "name": "VHS-C",
+    "slug": "vhsc",
+    "format_type": "analog",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 3,
+  "fields": {
+    "name": "Betamax",
+    "slug": "betamax",
+    "format_type": "analog",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 4,
+  "fields": {
+    "name": "Video8",
+    "slug": "video8",
+    "format_type": "analog",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 5,
+  "fields": {
+    "name": "Hi8",
+    "slug": "hi8",
+    "format_type": "analog",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 6,
+  "fields": {
+    "name": "MiniDV",
+    "slug": "minidv",
+    "format_type": "digital",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 7,
+  "fields": {
+    "name": "Digital8",
+    "slug": "digital8",
+    "format_type": "digital",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 8,
+  "fields": {
+    "name": "MicroMV",
+    "slug": "micromv",
+    "format_type": "digital",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 9,
+  "fields": {
+    "name": "D-VHS",
+    "slug": "dvhs",
+    "format_type": "digital",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 10,
+  "fields": {
+    "name": "HDV",
+    "slug": "hdv",
+    "format_type": "digital",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 11,
+  "fields": {
+    "name": "DVD",
+    "slug": "dvd",
+    "format_type": "optical",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 12,
+  "fields": {
+    "name": "Blu-ray Disc",
+    "slug": "bluraydisc",
+    "format_type": "optical",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 13,
+  "fields": {
+    "name": "AVCHD",
+    "slug": "avchd",
+    "format_type": "optical",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 14,
+  "fields": {
+    "name": "Memory Stick",
+    "slug": "memorystick",
+    "format_type": "flash",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 15,
+  "fields": {
+    "name": "SD",
+    "slug": "sd",
+    "format_type": "flash",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 16,
+  "fields": {
+    "name": "microSD",
+    "slug": "microsd",
+    "format_type": "flash",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 17,
+  "fields": {
+    "name": "P2 Card",
+    "slug": "p2card",
+    "format_type": "flash",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 18,
+  "fields": {
+    "name": "SxS",
+    "slug": "sxs",
+    "format_type": "flash",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.recordingformat",
+  "pk": 19,
+  "fields": {
+    "name": "HDD",
+    "slug": "hdd",
+    "format_type": "hdd",
+    "description": ""
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 1,
+  "fields": {
+    "name": "CCD-V9",
+    "slug": "sony-ccd-v9",
+    "manufacturer": 1,
+    "release_year": 1989,
+    "recording_format": 1,
+    "specifications": {
+      "Тип камеры": "Плечевая видеокамера",
+      "Формат записи": "VHS",
+      "Тип носителя": "VHS кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "250000 пикс",
+      "Размер матрицы": "2/3\"",
+      "Оптический зум": "6x",
+      "Объектив": "Sony",
+      "Разрешение записи": "230 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход",
+      "Тип аккумулятора": "NP-55"
+    },
+    "description": "Классическая плечевая VHS камера от Sony.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.187Z",
+    "updated_at": "2025-11-17T20:29:29.096Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 2,
+  "fields": {
+    "name": "CCD-TR555",
+    "slug": "sony-ccd-tr555",
+    "manufacturer": 1,
+    "release_year": 1990,
+    "recording_format": 4,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "Video8",
+      "Тип носителя": "Video8 кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "270000 пикс",
+      "Размер матрицы": "1/3\"",
+      "Оптический зум": "8x",
+      "Объектив": "Sony",
+      "Разрешение записи": "240 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход, микрофон",
+      "Тип аккумулятора": "NP-55"
+    },
+    "description": "Компактная камера формата Video8 с хорошим качеством изображения.",
+    "features": "",
+    "is_featured": true,
+    "created_at": "2025-11-17T14:56:56.198Z",
+    "updated_at": "2025-11-17T20:27:04.441Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 3,
+  "fields": {
+    "name": "CCD-TR818",
+    "slug": "sony-ccd-tr818",
+    "manufacturer": 1,
+    "release_year": 1992,
+    "recording_format": 5,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "Hi8",
+      "Тип носителя": "Hi8 кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "320000 пикс",
+      "Размер матрицы": "1/3\"",
+      "Оптический зум": "10x",
+      "Объектив": "Sony",
+      "Разрешение записи": "250 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход, микрофон, S-видео",
+      "Тип аккумулятора": "NP-66"
+    },
+    "description": "Улучшенная модель с лучшим разрешением и увеличенным зумом.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.207Z",
+    "updated_at": "2025-11-17T16:32:22.800Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 4,
+  "fields": {
+    "name": "DCR-VX1000",
+    "slug": "sony-dcr-vx1000",
+    "manufacturer": 1,
+    "release_year": 1995,
+    "recording_format": 6,
+    "specifications": {
+      "Тип камеры": "Профессиональная видеокамера",
+      "Формат записи": "MiniDV",
+      "Тип носителя": "MiniDV кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "3",
+      "Разрешение матрицы": "410000 пикс x3",
+      "Размер матрицы": "1/3\"",
+      "Оптический зум": "10x",
+      "Объектив": "Carl Zeiss",
+      "Разрешение записи": "500 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "IEEE 1394, AV, S-видео",
+      "Тип аккумулятора": "NP-F530"
+    },
+    "description": "Первая в мире потребительская MiniDV камера.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.218Z",
+    "updated_at": "2025-11-17T20:29:14.290Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 5,
+  "fields": {
+    "name": "DCR-TRV900",
+    "slug": "sony-dcr-trv900",
+    "manufacturer": 1,
+    "release_year": 1999,
+    "recording_format": 6,
+    "specifications": {
+      "Тип камеры": "Профессиональная видеокамера",
+      "Формат записи": "MiniDV",
+      "Тип носителя": "MiniDV кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "3",
+      "Разрешение матрицы": "450000 пикс x3",
+      "Размер матрицы": "1/4.7\"",
+      "Оптический зум": "12x",
+      "Объектив": "Carl Zeiss",
+      "Разрешение записи": "500 lines",
+      "Стабилизация": "Оптическая",
+      "Разъемы": "IEEE 1394, AV, S-видео, микрофон, наушники",
+      "Тип аккумулятора": "NP-F960"
+    },
+    "description": "Легендарная 3CCD камера, популярная среди профессионалов.",
+    "features": "",
+    "is_featured": true,
+    "created_at": "2025-11-17T14:56:56.227Z",
+    "updated_at": "2025-11-17T16:26:27.188Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 6,
+  "fields": {
+    "name": "NV-M5",
+    "slug": "panasonic-nv-m5",
+    "manufacturer": 2,
+    "release_year": 1988,
+    "recording_format": 1,
+    "specifications": {
+      "Тип камеры": "Плечевая видеокамера",
+      "Формат записи": "VHS",
+      "Тип носителя": "VHS кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "250000 пикс",
+      "Размер матрицы": "1/2\"",
+      "Оптический зум": "6x",
+      "Объектив": "Panasonic",
+      "Разрешение записи": "230 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход",
+      "Тип аккумулятора": "BP-20"
+    },
+    "description": "Классическая плечевая VHS камера от Panasonic.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.236Z",
+    "updated_at": "2025-11-17T20:29:25.350Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 7,
+  "fields": {
+    "name": "NV-S1",
+    "slug": "panasonic-nv-s1",
+    "manufacturer": 2,
+    "release_year": 1991,
+    "recording_format": 2,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "VHS-C",
+      "Тип носителя": "VHS-C кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "270000 пикс",
+      "Размер матрицы": "1/3\"",
+      "Оптический зум": "6x",
+      "Объектив": "Panasonic",
+      "Разрешение записи": "240 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход",
+      "Тип аккумулятора": "BP-30"
+    },
+    "description": "Компактная VHS-C камера от Panasonic.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.245Z",
+    "updated_at": "2025-11-17T18:38:27.750Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 8,
+  "fields": {
+    "name": "NV-DS77",
+    "slug": "panasonic-nv-ds77",
+    "manufacturer": 2,
+    "release_year": 2000,
+    "recording_format": 6,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "MiniDV",
+      "Тип носителя": "MiniDV кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "680000 пикс",
+      "Размер матрицы": "1/4\"",
+      "Оптический зум": "10x",
+      "Объектив": "Panasonic",
+      "Разрешение записи": "500 lines",
+      "Стабилизация": "Электронная",
+      "Разъемы": "IEEE 1394, AV, S-видео",
+      "Тип аккумулятора": "CGR-D28"
+    },
+    "description": "Компактная MiniDV камера с хорошим качеством изображения.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.253Z",
+    "updated_at": "2025-11-17T18:38:15.990Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 9,
+  "fields": {
+    "name": "NV-DS99",
+    "slug": "panasonic-nv-ds99",
+    "manufacturer": 2,
+    "release_year": 2001,
+    "recording_format": 6,
+    "specifications": {
+      "Тип камеры": "Профессиональная видеокамера",
+      "Формат записи": "MiniDV",
+      "Тип носителя": "MiniDV кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "3",
+      "Разрешение матрицы": "410000 пикс x3",
+      "Размер матрицы": "1/4.7\"",
+      "Оптический зум": "10x",
+      "Объектив": "Leica Dicomar",
+      "Разрешение записи": "500 lines",
+      "Стабилизация": "Оптическая",
+      "Разъемы": "IEEE 1394, AV, S-видео, микрофон",
+      "Тип аккумулятора": "CGR-D54"
+    },
+    "description": "3CCD MiniDV камера с объективом Leica.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.262Z",
+    "updated_at": "2025-11-17T20:29:20.908Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 10,
+  "fields": {
+    "name": "GR-A1",
+    "slug": "jvc-gr-a1",
+    "manufacturer": 3,
+    "release_year": 1989,
+    "recording_format": 1,
+    "specifications": {
+      "Тип камеры": "Плечевая видеокамера",
+      "Формат записи": "VHS",
+      "Тип носителя": "VHS кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "250000 пикс",
+      "Размер матрицы": "1/2\"",
+      "Оптический зум": "6x",
+      "Объектив": "JVC",
+      "Разрешение записи": "230 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход",
+      "Тип аккумулятора": "BP-10"
+    },
+    "description": "Классическая плечевая VHS камера от JVC.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.271Z",
+    "updated_at": "2025-11-17T18:41:16.338Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 11,
+  "fields": {
+    "name": "GR-S707",
+    "slug": "jvc-gr-s707",
+    "manufacturer": 3,
+    "release_year": 1992,
+    "recording_format": 2,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "VHS-C",
+      "Тип носителя": "VHS-C кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "270000 пикс",
+      "Размер матрицы": "1/3\"",
+      "Оптический зум": "8x",
+      "Объектив": "JVC",
+      "Разрешение записи": "240 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход",
+      "Тип аккумулятора": "BP-20"
+    },
+    "description": "Компактная VHS-C камера от JVC.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.281Z",
+    "updated_at": "2025-11-17T18:45:12.362Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 12,
+  "fields": {
+    "name": "GR-DVL320",
+    "slug": "jvc-gr-dvl320",
+    "manufacturer": 3,
+    "release_year": 2001,
+    "recording_format": 6,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "MiniDV",
+      "Тип носителя": "MiniDV кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "680000 пикс",
+      "Размер матрицы": "1/3.8\"",
+      "Оптический зум": "10x",
+      "Объектив": "JVC",
+      "Разрешение записи": "500 lines",
+      "Стабилизация": "Электронная",
+      "Разъемы": "IEEE 1394, AV, S-видео",
+      "Тип аккумулятора": "BN-V408"
+    },
+    "description": "Компактная MiniDV камера от JVC.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.294Z",
+    "updated_at": "2025-11-17T18:38:50.890Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 13,
+  "fields": {
+    "name": "GY-DV500",
+    "slug": "jvc-gy-dv500",
+    "manufacturer": 3,
+    "release_year": 2000,
+    "recording_format": 6,
+    "specifications": {
+      "Тип камеры": "Профессиональная студийная камера",
+      "Формат записи": "MiniDV",
+      "Тип носителя": "MiniDV кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "3",
+      "Разрешение матрицы": "410000 пикс x3",
+      "Размер матрицы": "1/3\"",
+      "Оптический зум": "14x",
+      "Объектив": "Fujinon",
+      "Разрешение записи": "750 lines",
+      "Стабилизация": "Оптическая",
+      "Разъемы": "XLR, IEEE 1394, компонентный, SDI",
+      "Тип аккумулятора": "BP-90"
+    },
+    "description": "Профессиональная студийная камера формата MiniDV.",
+    "features": "",
+    "is_featured": true,
+    "created_at": "2025-11-17T14:56:56.303Z",
+    "updated_at": "2025-11-17T18:38:59.730Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 14,
+  "fields": {
+    "name": "UC-10",
+    "slug": "canon-uc-10",
+    "manufacturer": 4,
+    "release_year": 1988,
+    "recording_format": 1,
+    "specifications": {
+      "Тип камеры": "Плечевая видеокамера",
+      "Формат записи": "VHS",
+      "Тип носителя": "VHS кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "250000 пикс",
+      "Размер матрицы": "1/2\"",
+      "Оптический зум": "6x",
+      "Объектив": "Canon",
+      "Разрешение записи": "230 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход",
+      "Тип аккумулятора": "BP-10"
+    },
+    "description": "Классическая плечевая VHS камера от Canon.",
+    "features": "",
+    "is_featured": true,
+    "created_at": "2025-11-17T14:56:56.312Z",
+    "updated_at": "2025-11-17T20:26:41.140Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 15,
+  "fields": {
+    "name": "E50",
+    "slug": "canon-e50",
+    "manufacturer": 4,
+    "release_year": 1993,
+    "recording_format": 2,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "VHS-C",
+      "Тип носителя": "VHS-C кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "270000 пикс",
+      "Размер матрицы": "1/3\"",
+      "Оптический зум": "8x",
+      "Объектив": "Canon",
+      "Разрешение записи": "240 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход",
+      "Тип аккумулятора": "BP-20"
+    },
+    "description": "Компактная VHS-C камера от Canon.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.321Z",
+    "updated_at": "2025-11-17T18:41:35.896Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 16,
+  "fields": {
+    "name": "XL1",
+    "slug": "canon-xl1",
+    "manufacturer": 4,
+    "release_year": 1997,
+    "recording_format": 6,
+    "specifications": {
+      "Тип камеры": "Профессиональная видеокамера",
+      "Формат записи": "MiniDV",
+      "Тип носителя": "MiniDV кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "3",
+      "Разрешение матрицы": "270000 пикс x3",
+      "Размер матрицы": "1/3\"",
+      "Оптический зум": "16x",
+      "Объектив": "Canon (сменный)",
+      "Разрешение записи": "500 lines",
+      "Стабилизация": "Оптическая",
+      "Разъемы": "IEEE 1394, XLR, компонентный",
+      "Тип аккумулятора": "BP-930"
+    },
+    "description": "Культовая профессиональная камера со сменными объективами.",
+    "features": "",
+    "is_featured": true,
+    "created_at": "2025-11-17T14:56:56.331Z",
+    "updated_at": "2025-11-17T20:28:54.786Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 17,
+  "fields": {
+    "name": "VL-E7",
+    "slug": "sharp-vl-e7",
+    "manufacturer": 5,
+    "release_year": 1998,
+    "recording_format": 2,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "VHS-C",
+      "Тип носителя": "VHS-C кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "270000 пикс",
+      "Размер матрицы": "1/3\"",
+      "Оптический зум": "8x",
+      "Объектив": "Sharp",
+      "Разрешение записи": "240 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход",
+      "Тип аккумулятора": "BP-10"
+    },
+    "description": "Компактная VHS-C камера от Sharp.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.341Z",
+    "updated_at": "2025-11-17T20:29:46.945Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 18,
+  "fields": {
+    "name": "VL-H400",
+    "slug": "sharp-vl-h400",
+    "manufacturer": 5,
+    "release_year": 2001,
+    "recording_format": 6,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "MiniDV",
+      "Тип носителя": "MiniDV кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "680000 пикс",
+      "Размер матрицы": "1/4\"",
+      "Оптический зум": "10x",
+      "Объектив": "Sharp",
+      "Разрешение записи": "500 lines",
+      "Стабилизация": "Электронная",
+      "Разъемы": "IEEE 1394, AV, S-видео",
+      "Тип аккумулятора": "BP-408"
+    },
+    "description": "MiniDV камера от Sharp с хорошим качеством изображения.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.351Z",
+    "updated_at": "2025-11-17T18:41:52.920Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 19,
+  "fields": {
+    "name": "VM-2000",
+    "slug": "hitachi-vm-2000",
+    "manufacturer": 6,
+    "release_year": 1990,
+    "recording_format": 1,
+    "specifications": {
+      "Тип камеры": "Плечевая видеокамера",
+      "Формат записи": "VHS",
+      "Тип носителя": "VHS кассета",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "250000 пикс",
+      "Размер матрицы": "1/2\"",
+      "Оптический зум": "6x",
+      "Объектив": "Hitachi",
+      "Разрешение записи": "230 lines",
+      "Стабилизация": "Нет",
+      "Разъемы": "AV выход",
+      "Тип аккумулятора": "BP-10"
+    },
+    "description": "Классическая плечевая VHS камера от Hitachi.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.359Z",
+    "updated_at": "2025-11-17T18:42:28.638Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 20,
+  "fields": {
+    "name": "DZ-MV350",
+    "slug": "hitachi-dz-mv350",
+    "manufacturer": 6,
+    "release_year": 2003,
+    "recording_format": 11,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "DVD",
+      "Тип носителя": "DVD-R/RW",
+      "Тип сенсора": "CCD",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "680000 пикс",
+      "Размер матрицы": "1/4\"",
+      "Оптический зум": "10x",
+      "Объектив": "Hitachi",
+      "Разрешение записи": "520 lines",
+      "Стабилизация": "Электронная",
+      "Разъемы": "USB, AV, S-видео",
+      "Тип аккумулятора": "BP-508"
+    },
+    "description": "Одна из первых DVD камер на рынке.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.368Z",
+    "updated_at": "2025-11-17T20:29:41.399Z"
+  }
+},
+{
+  "model": "cameras.camera",
+  "pk": 24,
+  "fields": {
+    "name": "DMX-C1",
+    "slug": "sanyo-dmx-c1",
+    "manufacturer": 9,
+    "release_year": 2003,
+    "recording_format": 15,
+    "specifications": {
+      "Тип камеры": "Компактная видеокамера",
+      "Формат записи": "MPEG-4",
+      "Тип носителя": "SD карта",
+      "Тип сенсора": "CMOS",
+      "Количество матриц": "1",
+      "Разрешение матрицы": "3200000 пикс",
+      "Размер матрицы": "1/2.7\"",
+      "Оптический зум": "10x",
+      "Объектив": "Sanyo",
+      "Разрешение записи": "640x480",
+      "Стабилизация": "Электронная",
+      "Разъемы": "USB, AV",
+      "Тип аккумулятора": "DB-L10"
+    },
+    "description": "Одна из первых камер, использующих SD карты для записи.",
+    "features": "",
+    "is_featured": false,
+    "created_at": "2025-11-17T14:56:56.406Z",
+    "updated_at": "2025-11-17T20:29:36.703Z"
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 1,
+  "fields": {
+    "camera": 9,
+    "image": "cameras/Panasonic_NV-DS99EN.jpg",
+    "caption": "1",
+    "is_main": true
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 5,
+  "fields": {
+    "camera": 5,
+    "image": "cameras/Sony_DCR-TRV900.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 7,
+  "fields": {
+    "camera": 4,
+    "image": "cameras/DCR-VX1000.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 8,
+  "fields": {
+    "camera": 3,
+    "image": "cameras/SONY_CCD-TR818.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 10,
+  "fields": {
+    "camera": 1,
+    "image": "cameras/CCD-V9.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 11,
+  "fields": {
+    "camera": 2,
+    "image": "cameras/CCD-TR555_r4VJbPY.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 12,
+  "fields": {
+    "camera": 8,
+    "image": "cameras/Panasonic_NV-DS77.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 13,
+  "fields": {
+    "camera": 7,
+    "image": "cameras/NV-S1.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 15,
+  "fields": {
+    "camera": 12,
+    "image": "cameras/GR-DVL320.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 16,
+  "fields": {
+    "camera": 13,
+    "image": "cameras/jvc_GY-DV500.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 19,
+  "fields": {
+    "camera": 10,
+    "image": "cameras/jvc_GR-A1.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 20,
+  "fields": {
+    "camera": 16,
+    "image": "cameras/XL1.webp",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 21,
+  "fields": {
+    "camera": 15,
+    "image": "cameras/E50.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 22,
+  "fields": {
+    "camera": 14,
+    "image": "cameras/UC-10.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 23,
+  "fields": {
+    "camera": 18,
+    "image": "cameras/Sharp_VL-H400.webp",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 24,
+  "fields": {
+    "camera": 17,
+    "image": "cameras/Sharp_VL-E7.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 25,
+  "fields": {
+    "camera": 20,
+    "image": "cameras/DZ-MV350.jpg",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 26,
+  "fields": {
+    "camera": 19,
+    "image": "cameras/VM-2000_Hitachi_1990_VHS.jfif",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 28,
+  "fields": {
+    "camera": 6,
+    "image": "cameras/NV-M5.png",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 29,
+  "fields": {
+    "camera": 11,
+    "image": "cameras/JVC-GR-S707.png",
+    "caption": "",
+    "is_main": false
+  }
+},
+{
+  "model": "cameras.cameraimage",
+  "pk": 30,
+  "fields": {
+    "camera": 24,
+    "image": "cameras/DMX-C1_Sanyo.png",
+    "caption": "",
+    "is_main": false
+  }
+}
+]

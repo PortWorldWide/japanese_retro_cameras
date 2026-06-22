@@ -1,0 +1,18 @@
+[Unit]
+Description=Gunicorn для Japanese Retro Cameras
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/japanese_retro_cameras
+EnvironmentFile=/var/www/japanese_retro_cameras/.env
+ExecStart=/var/www/japanese_retro_cameras/venv/bin/gunicorn \
+    --workers 3 \
+    --bind 127.0.0.1:8000 \
+    --timeout 120 \
+    retro_cameras.wsgi:application
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

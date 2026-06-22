@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Архив японских ретро-видеокамер{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="paper-texture"></div>
+    <div class="scan-lines-vintage"></div>
+
+    <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+        ☰ Меню
+    </button>
+
+    <div class="vintage-container">
+        <aside class="catalog-sidebar" id="catalog-sidebar">
+            <div class="sidebar-header">
+                <div class="japanese-seal">㊙</div>
+                <h2>カタログ</h2>
+                <p>Catalog 1980-2010</p>
+            </div>
+
+            <nav class="catalog-nav">
+                <div class="nav-section">
+                    <h3>brand</h3>
+                    <div class="manufacturer-list">
+                        {% for manufacturer in manufacturers %}
+                        <a href="{% url 'camera_list' %}?manufacturer={{ manufacturer.slug }}" class="manufacturer-item">
+                            <span class="brand-icon {{ manufacturer.slug|lower }}"></span>
+                            {{ manufacturer.name }}
+                            <span class="model-count">{{ manufacturer.camera_set.count }}</span>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <h3>recording format</h3>
+                    <div class="media-type-list">
+                        {% for format in recording_formats %}
+                        <a href="{% url 'camera_list' %}?format={{ format.slug }}" class="media-type-item">
+                            <span class="media-icon {{ format.slug|lower }}"></span>
+                            {{ format.name }}
+                            <span class="item-count">{{ format.camera_set.count }}</span>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="vintage-content">
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+
+    <script src="{% static 'js/search_autocomplete.js' %}"></script>
+    <script>
+    (function () {
+        var toggle = document.getElementById('mobile-menu-toggle');
+        var sidebar = document.getElementById('catalog-sidebar');
+        var overlay = document.getElementById('sidebar-overlay');
+
+        function closeSidebar() {
+            if (!sidebar) return;
+            sidebar.classList.remove('open');
+            if (overlay) overlay.hidden = true;
+            if (toggle) toggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+        }
+
+        function openSidebar() {
+            if (!sidebar) return;
+            sidebar.classList.add('open');
+            if (overlay) overlay.hidden = false;
+            if (toggle) toggle.setAttribute('aria-expanded', 'true');
+            document.body.classList.add('menu-open');
+        }
+
+        if (toggle && sidebar) {
+            toggle.addEventListener('click', function () {
+                if (sidebar.classList.contains('open')) {
+                    closeSidebar();
+                } else {
+                    openSidebar();
+                }
+            });
+        }
+
+        if (overlay) {
+            overlay.addEventListener('click', closeSidebar);
+        }
+
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 768) {
+                closeSidebar();
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="vintage-header">
+    <div class="header-main">
+        <h1 class="main-title">アーカイブ</h1>
+        <p class="subtitle">Japanese Retro Camcorder 1980-2010</p>
+    </div>
+    <div class="header-actions">
+        <div class="search-box-vintage">
+            <input type="text" placeholder="..." class="search-input-vintage" id="search-input">
+            <button class="search-btn-vintage" onclick="performSearch()">search</button>
+            <div class="autocomplete-results" id="autocomplete-results"></div>
+        </div>
+    </div>
+</header>
+
+<div class="status-bar">
+    <div class="status-item">
+        <span class="status-label">Коллекция камер:</span>
+        <span class="status-value">{{ total_cameras }} моделей</span>
+    </div>
+    <div class="status-item">
+        <span class="status-label">Последнее добавление:</span>
+        <span class="status-value">
+            {% if featured_cameras.first %}
+                {{ featured_cameras.first.manufacturer.name }} {{ featured_cameras.first.name }}
+            {% else %}
+                Нет данных
+            {% endif %}
+        </span>
+    </div>
+</div>
+
+<section class="featured-section">
+    <h2 class="section-title-vintage">рекомендуемые к просмотру</h2>
+    <div class="featured-cameras">
+        {% for camera in featured_cameras %}
+        <article class="camera-featured-card">
+            <div class="camera-image-vintage">
+                <div class="image-frame">
+                    {% with main_image=camera.get_main_image %}
+                        {% if main_image %}
+                            <img src="{{ main_image.image.url }}" alt="{{ camera.name }}" style="max-height: 180px; max-width: 100%;">
+                        {% else %}
+                            <div class="placeholder-image">Изображение камеры</div>
+                        {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+            <div class="camera-info-vintage">
+                <h3><a href="{% url 'camera_detail' camera.slug %}" style="color: inherit; text-decoration: none;">
+                    {{ camera.manufacturer.name }} {{ camera.name }}
+                </a></h3>
+                <div class="camera-meta-vintage">
+                    <span class="year">{{ camera.release_year }} год</span>
+                    <span class="media-type">{{ camera.recording_format.name }}</span>
+                    <span class="manufacturer">{{ camera.manufacturer.name }}</span>
+                </div>
+                <p class="camera-description-vintage">
+                    {{ camera.description|truncatewords:30 }}
+                </p>
+                <div class="camera-stats-vintage">
+                    <div class="stat-item">
+                        <span class="stat-label">Год выпуска</span>
+                        <span class="stat-value">{{ camera.release_year }}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Формат</span>
+                        <span class="stat-value">{{ camera.recording_format.name }}</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% empty %}
+        <p>Нет избранных камер</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

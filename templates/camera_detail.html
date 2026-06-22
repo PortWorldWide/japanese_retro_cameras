@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ camera.manufacturer.name }} {{ camera.name }} - Архив японских ретро-видеокамер{% endblock %}
+
+{% block content %}
+<div class="camera-detail">
+    <header class="vintage-header">
+        <div class="header-main">
+            <h1 class="main-title">{{ camera.manufacturer.name }} {{ camera.name }}</h1>
+            <p class="subtitle">{{ camera.release_year }} год • {{ camera.recording_format.name }}</p>
+        </div>
+        <div class="header-actions">
+            <a href="{% url 'index' %}" class="search-btn-vintage" style="text-decoration: none;">На главную</a>
+        </div>
+    </header>
+
+    <!-- Галерея изображений -->
+    <div class="camera-gallery">
+        <div class="main-image">
+            <div class="image-frame" style="height: 300px;">
+                {% with main_image=camera.get_main_image %}
+                    {% if main_image %}
+                        <img src="{{ main_image.image.url }}" alt="{{ camera.name }}" style="max-height: 260px; max-width: 100%;">
+                    {% else %}
+                        <div class="placeholder-image">Изображение камеры</div>
+                    {% endif %}
+                {% endwith %}
+            </div>
+        </div>
+        
+        {% if camera.images.count > 1 %}
+        <div class="thumbnail-images">
+            {% for image in camera.images.all %}
+            <div class="thumbnail">
+                <img src="{{ image.image.url }}" alt="{{ image.caption|default:camera.name }}">
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Основная информация -->
+    <div class="camera-meta-vintage" style="margin-bottom: 30px;">
+        <span class="year">{{ camera.release_year }} год</span>
+        <span class="media-type">{{ camera.recording_format.name }}</span>
+        <span class="manufacturer">{{ camera.manufacturer.name }}</span>
+    </div>
+
+    <!-- Описание -->
+    <div style="margin-bottom: 30px;">
+        <h2 class="section-title-vintage">Описание</h2>
+        <p class="camera-description-vintage">{{ camera.description }}</p>
+        {% if camera.features %}
+        <h3 style="color: #2c3e50; margin: 20px 0 10px 0;">Особенности</h3>
+        <p class="camera-description-vintage">{{ camera.features }}</p>
+        {% endif %}
+    </div>
+
+    <!-- Характеристики -->
+    <div style="margin-bottom: 30px;">
+        <h2 class="section-title-vintage">Технические характеристики</h2>
+        <table class="specifications-table">
+            <tbody>
+                {% for key, value in camera.specifications.items %}
+                <tr>
+                    <th>{{ key }}</th>
+                    <td>{{ value }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="2" style="text-align: center; color: #7f8c8d;">
+                        Характеристики не указаны
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Документация -->
+    {% if camera.documents.exists %}
+    <div style="margin-bottom: 30px;">
+        <h2 class="section-title-vintage">Документация</h2>
+        <div class="documents-list">
+            {% for document in camera.documents.all %}
+            <div class="document-item">
+                <div class="document-info">
+                    <h4>{{ document.title }}</h4>
+                    <span class="document-type">
+                        {% if document.document_type == 'manual' %}Инструкция
+                        {% elif document.document_type == 'specs' %}Технические характеристики
+                        {% elif document.document_type == 'brochure' %}Брошюра
+                        {% elif document.document_type == 'service' %}Сервисное руководство
+                        {% endif %}
+                    </span>
+                </div>
+                <a href="{{ document.document.url }}" class="download-btn" download>Скачать</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
